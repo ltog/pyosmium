@@ -31,8 +31,8 @@ init:
       set vcvarsall_arg=amd64&&
       set build_type=Release)
   - '"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall" %vcvarsall_arg%'
-  - set conda_path=%MINICONDA\Scripts
-  - set conda_library_path=%MINICONDA\envs\pyosmium\Library
+  - set conda_path=%MINICONDA%\Scripts
+  - set conda_library_path=%MINICONDA%\envs\pyosmium\Library
 
 install:
   - set PATH=%PATH%;%conda_path%
